@@ -34,3 +34,47 @@ img {
   max-width: 100%; /* Bredde må maks fylde 100% */
   height: auto; /* Højden skal tilpasse sig */
 }
+
+
+.TopHeaderImgMobile {
+  background-image: url("../images/bckMobil.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: auto;
+}
+
+.Book-bord {
+  display: flex;
+  justify-content: center;
+  top: 43px;
+
+  .OpacityBck {
+    height: 88px;
+    width: 164px;
+    background-color: #0C0C0C;
+
+    p {
+      color: #EC6907;
+      font-size: 10px;
+      font-family: ff-cocon-pro, sans-serif;
+      font-weight: 400;
+    }
+  }
+
+  .Book-Bord-section {
+
+    .Book-bord-Btn {
+      background-color: #EC6907;
+      border: none;
+      font-size: 10px;
+      font-weight: 400;
+      cursor: pointer;
+      border-radius: 13px;
+      color: #F9F9F9;
+      padding: 6px 8px;
+      font-family: Montserrat;
+    }
+  }
+
+}
