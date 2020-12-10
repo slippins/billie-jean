@@ -35,6 +35,14 @@ img {
   height: auto; /* Højden skal tilpasse sig */
 }
 
+$BackgroundColor:#EEE9E5;
+$ButtonColor:#EC6907;
+$TextBoksColor:#0C0C0C;
+$FooterColor:#566270;
+
+$FontPrimary:ff-cocon-pro, sans-serif;
+$FontSecandary:Montserrat;
+
 
 .TopHeaderImgMobile {
   background-image: url("../images/bckMobil.jpg");
@@ -52,12 +60,12 @@ img {
   .OpacityBck {
     height: 88px;
     width: 164px;
-    background-color: #0C0C0C;
+    background-color: $TextBoksColor;
 
     p {
-      color: #EC6907;
+      color: $ButtonColor;
       font-size: 10px;
-      font-family: ff-cocon-pro, sans-serif;
+      font-family:$FontPrimary;
       font-weight: 400;
     }
   }
@@ -65,7 +73,7 @@ img {
   .Book-Bord-section {
 
     .Book-bord-Btn {
-      background-color: #EC6907;
+      background-color: $ButtonColor;
       border: none;
       font-size: 10px;
       font-weight: 400;
