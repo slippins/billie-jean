@@ -104,6 +104,7 @@ img {
   }
 }
 
+
 @media screen and (min-width: 768px) {
   .MenuBar {
     .navbar {
@@ -132,6 +133,30 @@ img {
     background-position-y: 40%;
   }
 
+  .Book-bord {
+    display: flex;
+    justify-content: center;
+    top: 119px;
+  }
+
+  .Book-bord .OpacityBck {
+    height: 168px;
+    width: 368px;
+  }
+  .Book-bord .OpacityBck p {
+    font-size: 25px;
+    font-family: ff-cocon-pro, sans-serif;
+    margin-bottom: 47px;
+  }
+  .Book-bord {
+    .Book-Bord-section {
+      .Book-bord-Btn {
+        font-size: 17px;
+        padding: 10px 29px;
+        margin-bottom: 10px;
+      }
+    }
+  }
 }
 
 
@@ -148,34 +173,53 @@ img {
 }
 
 
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 
 
-    .MenuBar {
-      .navbar {
-        padding: 0 !important;
-        background-color: $BackgroundColor;
+  .MenuBar {
+    .navbar {
+      padding: 0 !important;
+      background-color: $BackgroundColor;
 
-        .LOGO1 {
-          height: 60px;
-          width: 100px;
-        }
+      .LOGO1 {
+        height: 60px;
+        width: 100px;
+      }
 
-        .nav-link {
-          font-size: 30px;
-          font-family: Montserrat;
+      .nav-link {
+        font-size: 30px;
+        font-family: Montserrat;
 
-        }
       }
     }
-    .TopHeaderImgMobile {
-      background-image: url("../images/bckDesktop.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 338px;
-      width: auto;
-      background-position-y: 70%;
-    }
-
   }
+  .TopHeaderImgMobile {
+    background-image: url("../images/bckDesktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: auto;
+    background-position-y: 75%;
+  }
+
+
+  .Book-bord .OpacityBck {
+    height: 300px;
+    width: 800px;
+  }
+  .Book-bord .OpacityBck p {
+    font-size: 57px;
+    font-family: ff-cocon-pro, sans-serif;
+    margin-bottom: 47px;
+  }
+  .Book-bord {
+    .Book-Bord-section {
+      .Book-bord-Btn {
+        font-size: 32px;
+        padding: 23px 72px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
 
