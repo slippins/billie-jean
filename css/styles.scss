@@ -1,7 +1,5 @@
 @import "css/_colors";
 
-
-
 * { /* Gælder alt på hele siden */
   box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen, padding mv. */
 }
@@ -38,15 +36,6 @@ img {
   max-width: 100%; /* Bredde må maks fylde 100% */
   height: auto; /* Højden skal tilpasse sig */
 }
-
-$BackgroundColor: #EEE9E5;
-$ButtonColor: #EC6907;
-$TextBoksColor: #0C0C0C;
-$FooterColor: #566270;
-
-$FontPrimary: ff-cocon-pro, sans-serif;
-$FontSecandary: Montserrat;
-
 
 .TopHeaderImgMobile {
   background-image: url("../images/bckMobil.jpg");
