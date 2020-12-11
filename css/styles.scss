@@ -37,6 +37,14 @@ img {
   height: auto; /* Højden skal tilpasse sig */
 }
 
+.GalleryForsiden {
+  > div img {
+    height: auto;
+    width: auto;
+  }
+}
+
+
 .TopHeaderImgMobile {
   background-image: url("../images/bckMobil.jpg");
   background-size: cover;
@@ -90,7 +98,8 @@ img {
     }
 
     .navbar-toggler-icon {
-      background-color: #707070;
+      font-size: 50px;
+      filter: invert(1);
     }
 
     .nav-link {
@@ -99,7 +108,7 @@ img {
       font-size: 20px;
       font-family: CoconPro;
       font-weight: 500;
-      color: $FooterColor !important;
+      color: #0C0C0C !important;
     }
   }
 }
