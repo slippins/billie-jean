@@ -37,6 +37,56 @@ img {
   height: auto; /* Højden skal tilpasse sig */
 }
 
+
+.AppearingSection {
+  display: flex;
+  align-items: center;
+
+  .headerText {
+    margin-bottom: 0;
+    background: #0C0C0C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-family: acumin-pro, sans-serif;
+    justify-content: center;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: CoconPro;
+    color: $ButtonColor;
+  }
+}
+
+.divKontakt {
+  border-radius: 5px;
+  padding: 5px 20px;
+  margin-top: 5px;
+  display: none;
+  cursor: pointer;
+  background-color: $ButtonColor;
+
+  a {
+    text-decoration: dotted;
+    color: #ffffff;
+    text-underline: none;
+    font-size: 12px;
+    font-family: Montserrat;
+  }
+
+  a:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+.divph1 {
+  display: none;
+}
+
+
 .Drikkekard {
   width: 200px;
   background-color: red;
@@ -83,7 +133,6 @@ img {
   color: #f9f9f9;
   font-family: Montserrat;
   margin: 10px auto 0 auto;
-  text-decoration: underline;
   height: 35px;
   width: 110px;
   display: flex;
@@ -98,40 +147,10 @@ img {
   background-repeat: no-repeat;
   height: 200px;
   width: auto;
-}
-
-.Book-bord {
   display: flex;
   justify-content: center;
-  top: 43px;
-
-  .OpacityBck {
-    height: 120px;
-    background-color: $TextBoksColor;
-
-    p {
-      color: $ButtonColor;
-      font-size: 16px;
-      font-family: $FontPrimary;
-      font-weight: 400;
-    }
-  }
-
-  .Book-Bord-section {
-
-    .Book-bord-Btn {
-      background-color: $ButtonColor;
-      border: none;
-      font-size: 16px;
-      font-weight: 400;
-      cursor: pointer;
-      border-radius: 13px;
-      color: #F9F9F9;
-      padding: 6px 8px;
-      font-family: Montserrat;
-    }
-  }
 }
+
 
 .MenuBar {
   .navbar {
@@ -173,6 +192,7 @@ img {
       padding: 0 !important;
       background-color: $BackgroundColor;
 
+
       .LOGO1 {
         height: 60px;
         width: 100px;
@@ -186,6 +206,33 @@ img {
     }
   }
 
+  .AppearingSection {
+    display: flex;
+    align-items: center;
+
+
+    p {
+      font-size: 35px;
+      font-family: CoconPro;
+      color: $ButtonColor;
+    }
+  }
+
+  .divKontakt {
+    border-radius: 5px;
+    padding: 10px 30px;
+    display: none;
+
+
+    a {
+      font-size: 25px;
+    }
+  }
+
+  .divph1 {
+    display: none;
+  }
+
   .TopHeaderImgMobile {
     background-image: url("../images/bckDesktop.jpg");
     background-size: cover;
@@ -195,30 +242,6 @@ img {
     background-position-y: 40%;
   }
 
-  .Book-bord {
-    display: flex;
-    justify-content: center;
-    top: 119px;
-  }
-
-  .Book-bord .OpacityBck {
-    height: 168px;
-    width: auto;
-  }
-  .Book-bord .OpacityBck p {
-    font-size: 25px;
-    font-family: ff-cocon-pro, sans-serif;
-    margin-bottom: 47px;
-  }
-  .Book-bord {
-    .Book-Bord-section {
-      .Book-bord-Btn {
-        font-size: 17px;
-        padding: 10px 29px;
-        margin-bottom: 10px;
-      }
-    }
-  }
 
   .MadKord h5 {
     font-size: 25px;
@@ -253,12 +276,11 @@ img {
 
 
 @media screen and (min-width: 1200px) {
-
-
   .MenuBar {
     .navbar {
       padding: 0 !important;
       background-color: $BackgroundColor;
+
 
       .LOGO1 {
         height: 60px;
@@ -268,10 +290,13 @@ img {
       .nav-link {
         font-size: 30px;
         font-family: Montserrat;
+        border-radius: 5px !important;
+
 
       }
     }
   }
+
   .TopHeaderImgMobile {
     background-image: url("../images/bckDesktop.jpg");
     background-size: cover;
@@ -279,26 +304,44 @@ img {
     height: 500px;
     width: auto;
     background-position-y: 75%;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+
   }
 
+  .AppearingSection {
+    display: flex;
+    align-items: center;
 
-  .Book-bord .OpacityBck {
-    height: 300px;
-    width: 850px;
-  }
-  .Book-bord .OpacityBck p {
-    font-size: 57px;
-    font-family: ff-cocon-pro, sans-serif;
-    margin-bottom: 47px;
-  }
-  .Book-bord {
-    .Book-Bord-section {
-      .Book-bord-Btn {
-        font-size: 32px;
-        padding: 23px 72px;
-        margin-bottom: 10px;
-      }
+    .headerText {
+      margin-bottom: 0;
+      background: #0C0C0C;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      justify-content: center;
     }
+
+    p {
+      font-size: 57px;
+    }
+  }
+
+  .divKontakt {
+    border-radius: 5px;
+    padding: 10px 30px;
+    display: none;
+
+    a {
+      font-size: 35px;
+    }
+  }
+
+  .divph1 {
+    display: none;
   }
 
   .MadKord h5 {
