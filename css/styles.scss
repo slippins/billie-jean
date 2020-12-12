@@ -37,11 +37,58 @@ img {
   height: auto; /* Højden skal tilpasse sig */
 }
 
-.GalleryForsiden {
-  > div img {
+.Drikkekard {
+  width: 200px;
+  background-color: red;
+}
+
+.Menu-section {
+  background-color: $BackgroundColor !important;
+}
+
+.MadKord {
+  padding-bottom: 10px;
+
+  h5 {
+    color: $skriftcolor;
+    font-family: CoconPro;
+    font-weight: bold;
+  }
+
+  .card-body {
+    background-color: $TextBoksColor;
+    height: 400px;
+  }
+
+  p, p2 {
+    color: $skriftcolor;
+    font-size: 12px !important;
+    font-family: Montserrat;
+  }
+
+  .mad {
     height: auto;
     width: auto;
+    padding: 10px 12px 10px 12px;
   }
+}
+
+.MenuKnappen {
+  background-color: #ec6907;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 13px;
+  color: #f9f9f9;
+  font-family: Montserrat;
+  margin: 10px auto 0 auto;
+  text-decoration: underline;
+  height: 35px;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -59,13 +106,12 @@ img {
   top: 43px;
 
   .OpacityBck {
-    height: 88px;
-    width: 164px;
+    height: 120px;
     background-color: $TextBoksColor;
 
     p {
       color: $ButtonColor;
-      font-size: 10px;
+      font-size: 16px;
       font-family: $FontPrimary;
       font-weight: 400;
     }
@@ -76,7 +122,7 @@ img {
     .Book-bord-Btn {
       background-color: $ButtonColor;
       border: none;
-      font-size: 10px;
+      font-size: 16px;
       font-weight: 400;
       cursor: pointer;
       border-radius: 13px;
@@ -89,8 +135,8 @@ img {
 
 .MenuBar {
   .navbar {
-    padding: 0 !important;
     background-color: $BackgroundColor;
+    padding: 10px 0 10px 0;
 
     .LOGO1 {
       height: 60px;
@@ -98,7 +144,7 @@ img {
     }
 
     .navbar-toggler-icon {
-      font-size: 50px;
+      font-size: 40px;
       filter: invert(1);
     }
 
@@ -110,6 +156,13 @@ img {
       font-weight: 500;
       color: #0C0C0C !important;
     }
+  }
+}
+
+.GalleryForsiden {
+  > div img {
+    height: auto;
+    width: auto;
   }
 }
 
@@ -150,7 +203,7 @@ img {
 
   .Book-bord .OpacityBck {
     height: 168px;
-    width: 368px;
+    width: auto;
   }
   .Book-bord .OpacityBck p {
     font-size: 25px;
@@ -165,6 +218,23 @@ img {
         margin-bottom: 10px;
       }
     }
+  }
+
+  .MadKord h5 {
+    font-size: 25px;
+  }
+
+  .MadKord p, .MadKord p2 {
+    font-size: 15px !important;
+  }
+  .MadKord .card-body {
+    height: 450px;
+  }
+  .MenuKnappen {
+    font-size: 20px;
+    font-weight: 500;
+    height: 44px;
+    width: 140px;
   }
 }
 
@@ -214,7 +284,7 @@ img {
 
   .Book-bord .OpacityBck {
     height: 300px;
-    width: 800px;
+    width: 850px;
   }
   .Book-bord .OpacityBck p {
     font-size: 57px;
@@ -229,6 +299,23 @@ img {
         margin-bottom: 10px;
       }
     }
+  }
+
+  .MadKord h5 {
+    font-size: 60px;
+  }
+
+  .MadKord p, .MadKord p2 {
+    font-size: 25px !important;
+  }
+  .MadKord .card-body {
+    height: 630px;
+  }
+  .MenuKnappen {
+    font-size: 20px;
+    font-weight: 500;
+    height: 44px;
+    width: 140px;
   }
 }
 
