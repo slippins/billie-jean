@@ -186,6 +186,33 @@ img {
 }
 
 
+.filmBCK {
+  background-image: url("../images/omBar.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 420px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+
+  .film {
+    height: 431px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p3, p4 {
+    color: $TextBoksColor;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-weight: 500;
+  }
+
+}
+
+
 @media screen and (min-width: 768px) {
   .MenuBar {
     .navbar {
@@ -258,6 +285,41 @@ img {
     font-weight: 500;
     height: 44px;
     width: 140px;
+  }
+
+  .filmBCK {
+    background-image: url("../images/omBar.jpg");
+    height: 1000px;
+  }
+  .filmBCK {
+    background-image: url("../images/omBar.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+
+    .film {
+      height: 700px;
+      width: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .iframe {
+      height: 500px;
+      width: 300px;
+    }
+
+    p3, p4 {
+      color: $TextBoksColor;
+      font-size: 30px;
+      font-family: Montserrat;
+      font-weight: 500;
+    }
+
   }
 }
 
@@ -359,6 +421,45 @@ img {
     font-weight: 500;
     height: 75px;
     width: 251px;
+  }
+
+  .filmBCK {
+    background-image: url("../images/omBar.jpg");
+    height: 700px;
+  }
+  .filmBCK {
+    background-image: url("../images/omBar.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+
+    .film {
+      height: 700px;
+      width: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .iframe {
+      height: 500px;
+      width: 300px;
+    }
+
+    p3, p4 {
+      color: $TextBoksColor;
+      font-size: 30px;
+      font-family: Montserrat;
+      font-weight: 500;
+    }
+
+    > div {
+      padding: 10px 0 0 10px;
+      margin-left: 100px;
+    }
   }
 
 }
