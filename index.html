@@ -100,18 +100,45 @@
 
     <div class="GalleryForsiden d-flex flex-row">
         <div class="d-none d-md-block">
-            <img src="images/G1.jpg" alt="img">
+            <img id="myImg" src="images/G1.jpg" alt="Billie jeans bar">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+        </div>
+
+        <div>
+            <img id="myImg1"  src="images/G2.jpg" alt="Billie jeans bar">
+            <div id="myModal1" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal1-content" id="img011">
+                <div id="caption1"></div>
+            </div>
+        </div>
+
+        <div>
+            <img id="myImg2" src="images/G3.jpg" alt="Billie jeans bar">
+            <div id="myModal2" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal1-content" id="img012">
+                <div id="caption2"></div>
+            </div>
         </div>
         <div>
-            <img src="images/G2.jpg" alt="img">
-        </div>
-        <div>
-            <img src="images/G3.jpg" alt="img">
-        </div>
-        <div>
-            <img src="images/G4.jpg" alt="img">
+            <img id="myImg3" src="images/G4.jpg" alt="Billie jeans bar">
+            <div id="myModal3" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal1-content" id="img013">
+                <div id="caption3"></div>
+            </div>
         </div>
     </div>
+
+
+
+
 
     <!--  Her Mangler vi tiden-sektion, og Kapser prøver at kode den -->
 
@@ -185,5 +212,28 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/script.js"></script>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+</script>
 </body>
 </html>
