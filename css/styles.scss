@@ -158,8 +158,8 @@ img {
     padding: 10px 0 10px 0;
 
     .LOGO1 {
-      height: 60px;
-      width: 100px;
+      height: auto;
+      width: 150px;
     }
 
     .navbar-toggler-icon {
@@ -178,8 +178,9 @@ img {
 
     .btn-link {
       color: #0C0C0C;
-      font-size: 20px;
+      font-size: 30px;
       text-decoration-color: $ButtonColor;
+      line-height: 50px;
     }
   }
 }
@@ -231,11 +232,17 @@ img {
         width: 100px;
       }
 
+      .LOGO2 {
+        height: auto;
+        width: 150px;
+      }
+
       .nav-link {
         font-size: 20px;
         font-family: Montserrat;
 
       }
+
       .btn-link {
         color: #0C0C0C;
         font-size: 30px;
@@ -360,6 +367,11 @@ img {
       .LOGO1 {
         height: 60px;
         width: 100px;
+      }
+
+      .LOGO2 {
+        height: auto;
+        width: 200px;
       }
 
       .nav-link {
