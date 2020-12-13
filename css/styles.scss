@@ -175,6 +175,12 @@ img {
       font-weight: 500;
       color: #0C0C0C !important;
     }
+
+    .btn-link {
+      color: #0C0C0C;
+      font-size: 20px;
+      text-decoration-color: $ButtonColor;
+    }
   }
 }
 
@@ -229,6 +235,13 @@ img {
         font-size: 20px;
         font-family: Montserrat;
 
+      }
+      .btn-link {
+        color: #0C0C0C;
+        font-size: 30px;
+        text-decoration-color: $ButtonColor;
+        font-family: Montserrat;
+        font-weight: 600;
       }
     }
   }
@@ -353,8 +366,6 @@ img {
         font-size: 30px;
         font-family: Montserrat;
         border-radius: 5px !important;
-
-
       }
     }
   }
