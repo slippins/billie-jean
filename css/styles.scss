@@ -445,22 +445,6 @@ footer{
     background-position-y: 40%;
   }
 
-footer{
-  background-color: $FooterColor;
-}
-
-.map-container{
-  overflow:hidden;
-  position:relative;
-}
-.map-container iframe{
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
-}
-
   .MadKord h5 {
     font-size: 25px;
   }
