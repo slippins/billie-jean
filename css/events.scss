@@ -1,0 +1,19 @@
+@import "css/_colors";
+
+body {
+	background-color: $BackgroundColor !important;
+}
+
+h2, h3{
+  color: $ButtonColor;
+}
+
+.event-boks{
+  background-color: $EventColor;
+}
+
+img{
+  object-fit: contain;
+  height: 420px;
+  width: inherit;
+}
