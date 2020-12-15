@@ -19,6 +19,7 @@
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/kontakt.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -34,100 +35,135 @@
 
 <!-- Her skal sidens indhold ligge -->
 
-<footer class="page-footer font-small mdb-color pt-4">
 
-    <div class="container text-center text-md-left text-white">
-        <div class="row">
+    <div class="container">
+        <div class="flex-column text-md-left text-white">
+            <h2 class="font-weight-bold mb-4 mt-4 text-center">Kontakt</h2>
+            <h3 class="font-weight-bold mb-4 mt-4 t text-dark">Ved booking af borde kontakt os på facebook eller tlf</h3>
 
-            <!-- sociale medier -->
-            <div class="col-md-2 col-lg-2 mx-auto my-md-2 my-0 mt-2 mb-1">
-                <!-- Sociale knapper -->
-                <h5 class="font-weight-bold text-uppercase mb-4">Følg os</h5>
-                <!-- Facebook -->
-                <a href="https://www.facebook.com/BillieJeanBarNyk" class="btn btn-large mx-auto pt-0">
-                    <i class="fab fa-facebook-square fa-5x text-white"></i>
-                </a>
-                <!-- Instagram -->
-                <a href="https://twitter.com/billiejean_nyk?lang=da" class="btn btn-large mx-auto pt-0">
-                    <i class="fab fa-instagram fa-5x text-white"></i>
-                </a>
+            <div class="col-12 row my-2 p-4 mx-auto adresse-boks">
+                <div class="col-auto col-md-10 text-left">
+                    <p class="mb-3"><b class="m-3">Adresse: </b>Østergågade 39, 4800 Nykøbing Falster</p>
+                    <p class="mb-3"><b class="m-3">Mail: </b><a href="mailto:BillieJean.Nyk@gmail.com" class="text-white">BillieJean.Nyk@gmail.com</a></p>
+                    <p class="mb-3"><b class="m-3">Tlf: </b><a href="tel:+4522330426" class="text-white">22 33 04 26</a></p>
+                </div>
+                <div class="col-10 col-md-2  text-center my-auto">
+                    <a href="https://www.facebook.com/BillieJeanBarNyk" class="btn btn-large mx-auto pt-0">
+                        <i class="fab fa-facebook-square fa-5x text-white"></i>
+                    </a>
+                </div>
             </div>
+            <h3 class="font-weight-light mb-4 mt-4 t text-dark">Vejledning til at finde os fra stationen</h3>
 
-            <!-- kontakt -->
-            <div class="col-md-4 col-lg-3 d-none d-lg-block mx-auto my-md-2 my-0 mt-2 mb-1">
-
-                <!-- Kontakt detaljer -->
-                <h5 class="font-weight-bold text-uppercase mb-4">Kontakt os:</h5>
-
-                <ul class="list-unstyled">
-                    <!-- email -->
-                    <li>
-                        <p>
-                            <i class="fas fa-envelope mr-3"></i> BillieJean.Nyk@gmail.com
-                        </p>
-                    </li>
-                    <!-- telefon -->
-                    <li>
-                        <p>
-                            <i class="fas fa-phone mr-3"></i> +45 22 33 04 26
-                        </p>
-                    </li>
-                </ul>
+            <div class="col-10 col-md-8 justify-content-center embed-responsive embed-responsive-16by9 my-4 mx-auto">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
             </div>
-
-            <div class="col-md-4 col-lg-3 mx-auto my-md-2 my-0 mt-2 mb-1">
-
-                <!-- Åbningstider -->
-                <h5 class="font-weight-bold text-uppercase mb-4">Åbningstider</h5>
-
-                <ul class="list-unstyled">
-                    <li>
-                        <p>
-                            Mandag: LUKKET
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Tirsdag: 11.30 - 17.30
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Onsdag: 11.30 - 17.30
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Torsdag: 11.30 - 17.30
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Fredag: 11.30 - 22.00
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Lørdag: 11.30 - 22.00
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Søndag: LUKKET
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <!--Google maps-->
-            <div id="map-container" class="z-depth-1-half map-container col-md-4 col-lg-3 mx-auto my-md-2 my-0 mt-2 mb-2 embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://maps.google.com/maps?q=billie%20jean%20bar&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen></iframe>
-            </div>
-
-
+            <p class="text-dark pb-2 col-10 col-md-8 justify-content-center mx-auto px-0">Her er en lille video, der viser hvordan du kommer fra stationen til Billie Jean Bar</p>
 
         </div>
     </div>
-</footer>
+
+
+
+
+
+
+
+
+    <footer class="page-footer font-small mdb-color pt-4">
+
+        <div class="container text-center text-md-left text-white">
+            <div class="row">
+
+                <!-- sociale medier -->
+                <div class="col-md-2 col-lg-2 mx-auto my-md-2 my-0 mt-2 mb-1">
+                    <!-- Sociale knapper -->
+                    <h5 class="font-weight-bold text-uppercase mb-4">Følg os</h5>
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/BillieJeanBarNyk" class="btn btn-large mx-auto pt-0">
+                        <i class="fab fa-facebook-square fa-5x text-white"></i>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https://twitter.com/billiejean_nyk?lang=da" class="btn btn-large mx-auto pt-0">
+                        <i class="fab fa-instagram fa-5x text-white"></i>
+                    </a>
+                </div>
+
+                <!-- kontakt -->
+                <div class="col-md-4 col-lg-3 d-none d-lg-block mx-auto my-md-2 my-0 mt-2 mb-1">
+
+                    <!-- Kontakt detaljer -->
+                    <h5 class="font-weight-bold text-uppercase mb-4">Kontakt os:</h5>
+
+                    <ul class="list-unstyled">
+                        <!-- email -->
+                        <li>
+                            <p>
+                                <i class="fas fa-envelope mr-3"></i> BillieJean.Nyk@gmail.com
+                            </p>
+                        </li>
+                        <!-- telefon -->
+                        <li>
+                            <p>
+                                <i class="fas fa-phone mr-3"></i> +45 22 33 04 26
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-lg-3 mx-auto my-md-2 my-0 mt-2 mb-1">
+
+                    <!-- Åbningstider -->
+                    <h5 class="font-weight-bold text-uppercase mb-4">Åbningstider</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>
+                                Mandag: LUKKET
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Tirsdag: 11.30 - 17.30
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Onsdag: 11.30 - 17.30
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Torsdag: 11.30 - 17.30
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Fredag: 11.30 - 22.00
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Lørdag: 11.30 - 22.00
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Søndag: LUKKET
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <!--Google maps-->
+                <div id="map-container" class="z-depth-1-half map-container col-md-4 col-lg-3 mx-auto my-md-2 my-0 mt-2 mb-2 embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://maps.google.com/maps?q=billie%20jean%20bar&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+
+
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
