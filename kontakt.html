@@ -19,10 +19,13 @@
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/kontakt.css" rel="stylesheet" type="text/css">
+
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+          integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
@@ -32,102 +35,262 @@
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
 <body>
 
-<!-- Her skal sidens indhold ligge -->
+<div class="container-fluid px-0 py-0">
+    <header class="">
+        <div class="TopHeaderImgMobile">
 
-<footer class="page-footer font-small mdb-color pt-4">
+            <div class="AppearingSection">
+                <div class="headerText">
+                    <div class="divph1">
+                        <p class="px-lg-4 py-lg-2">Nykøbing F's hyggeligste bar</p>
+                    </div>
 
-    <div class="container text-center text-md-left text-white">
-        <div class="row">
+                    <a href="#KONTAKT">
+                        <div class="divKontakt mb-4"><a href="#OmMig-sektion1"><i class=""></i>Book
+                            bord</a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-            <!-- sociale medier -->
-            <div class="col-md-2 col-lg-2 mx-auto my-md-2 my-0 mt-2 mb-1">
-                <!-- Sociale knapper -->
-                <h5 class="font-weight-bold text-uppercase mb-4">Følg os</h5>
-                <!-- Facebook -->
+    <div class="MenuBar container-fluid py-0 px-0">
+        <nav class="navbar navbar-expand-md navbar-dark">
+
+            <div class="LOGO1 col-md-12 d-block d-md-none d-flex justify-content-center align-items-center">
+                <img src="images/logo.png" alt="logo">
+            </div>
+
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+
+                <ul class="navbar-nav ml-auto col-md-12 d-flex justify-content-center align-items-center m-0 px-0">
+
+                    <li class="nav-item col-md-2 d-flex justify-content-center justify-content-lg-start">
+                        <a href="menu.html" class="btn-link">Menu</a>
+                    </li>
+
+                    <li class="nav-item col-md-2 d-flex justify-content-center justify-content-lg-start">
+                        <a href="events.html" class="btn-link">Events</a>
+                    </li>
+
+                    <div class="LOGO2 d-none d-md-block">
+                        <img src="images/logo.png" alt="logo">
+                    </div>
+
+                    <li class="nav-item dropdown col-md-2 d-flex justify-content-center justify-content-lg-end">
+                        <a href="galleri.html" class="btn-link">Galleri</a>
+                    </li>
+
+                    <li class="nav-item col-md-2 d-flex justify-content-center justify-content-lg-end">
+                        <a href="kontakt.html" class="btn-link">Kontakt</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="GalleryForsiden d-flex flex-row">
+        <div class="d-none d-md-block">
+            <img id="myImg" src="images/G1.jpg" alt="Billie jeans bar">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+        </div>
+
+        <div>
+            <img id="myImg1" src="images/G2.jpg" alt="Billie jeans bar">
+            <div id="myModal1" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal1-content" id="img011">
+                <div id="caption1"></div>
+            </div>
+        </div>
+
+        <div>
+            <img id="myImg2" src="images/G3.jpg" alt="Billie jeans bar">
+            <div id="myModal2" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal1-content" id="img012">
+                <div id="caption2"></div>
+            </div>
+        </div>
+        <div>
+            <img id="myImg3" src="images/G4.jpg" alt="Billie jeans bar">
+            <div id="myModal3" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal1-content" id="img013">
+                <div id="caption3"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8 kontakt-sektion container-fluid pt-4 d-flex flex-column">
+        <h1 class="d-flex justify-content-center ">Kontakt</h1>
+        <h2 class="d-flex justify-content-center py-2 py-md-4">Ved bookning af borde kontakt os på facebook eller telefon</h2>
+
+        <div class="kontakt-boks p-2 p-md-5 d-flex flex-column justify-content-center mb-5">
+            <div class="d-flex flex-row text-white">
+                <ul class="kontak-boks2 font-weight-bold">Adresse:</ul>
+                <ul class="kontak-boks2">Østergågade 39, 4800 Nykøbing Falster</ul>
+            </div>
+            <div class="d-flex flex-row text-white">
+                <ul class="kontak-boks2 font-weight-bold">Mail:</ul>
+                <ul class="kontak-boks2">billiejean.nyk@gmail.com</ul>
+            </div>
+            <div class="d-flex flex-row text-white">
+                <ul class="kontak-boks2 font-weight-bold">Tlf:</ul>
+                <ul class="kontak-boks2">22 33 04 26</ul>
+            </div>
+            <div class="d-flex align-self-end">
                 <a href="https://www.facebook.com/BillieJeanBarNyk" class="btn btn-large mx-auto pt-0">
                     <i class="fab fa-facebook-square fa-5x text-white"></i>
                 </a>
-                <!-- Instagram -->
-                <a href="https://twitter.com/billiejean_nyk?lang=da" class="btn btn-large mx-auto pt-0">
-                    <i class="fab fa-instagram fa-5x text-white"></i>
-                </a>
             </div>
-
-            <!-- kontakt -->
-            <div class="col-md-4 col-lg-3 d-none d-lg-block mx-auto my-md-2 my-0 mt-2 mb-1">
-
-                <!-- Kontakt detaljer -->
-                <h5 class="font-weight-bold text-uppercase mb-4">Kontakt os:</h5>
-
-                <ul class="list-unstyled">
-                    <!-- email -->
-                    <li>
-                        <p>
-                            <i class="fas fa-envelope mr-3"></i> BillieJean.Nyk@gmail.com
-                        </p>
-                    </li>
-                    <!-- telefon -->
-                    <li>
-                        <p>
-                            <i class="fas fa-phone mr-3"></i> +45 22 33 04 26
-                        </p>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-md-4 col-lg-3 mx-auto my-md-2 my-0 mt-2 mb-1">
-
-                <!-- Åbningstider -->
-                <h5 class="font-weight-bold text-uppercase mb-4">Åbningstider</h5>
-
-                <ul class="list-unstyled">
-                    <li>
-                        <p>
-                            Mandag: LUKKET
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Tirsdag: 11.30 - 17.30
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Onsdag: 11.30 - 17.30
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Torsdag: 11.30 - 17.30
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Fredag: 11.30 - 22.00
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Lørdag: 11.30 - 22.00
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Søndag: LUKKET
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <!--Google maps-->
-            <div id="map-container" class="z-depth-1-half map-container col-md-4 col-lg-3 mx-auto my-md-2 my-0 mt-2 mb-2 embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://maps.google.com/maps?q=billie%20jean%20bar&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen></iframe>
-            </div>
-
-
 
         </div>
+        <div class="finde-os d-flex justify-content-center justify-content-md-start">
+            <p>Vejledning til at finde os fra stationen</p>
+        </div>
     </div>
-</footer>
 
+
+
+
+
+
+
+
+
+    <footer class="page-footer font-small mdb-color pt-4">
+
+        <div class="container text-center text-md-left text-white">
+            <div class="row">
+
+                <!-- sociale medier -->
+                <div class="col-md-2 col-lg-2 mx-auto my-md-2 my-0 mt-2 mb-1">
+                    <!-- Sociale knapper -->
+                    <h5 class="font-weight-bold text-uppercase mb-4">Følg os</h5>
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/BillieJeanBarNyk" class="btn btn-large mx-auto pt-0">
+                        <i class="fab fa-facebook-square fa-5x text-white"></i>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https://twitter.com/billiejean_nyk?lang=da" class="btn btn-large mx-auto pt-0">
+                        <i class="fab fa-instagram fa-5x text-white"></i>
+                    </a>
+                </div>
+
+                <!-- kontakt -->
+                <div class="col-md-4 col-lg-3 d-none d-lg-block mx-auto my-md-2 my-0 mt-2 mb-1">
+
+                    <!-- Kontakt detaljer -->
+                    <h5 class="font-weight-bold text-uppercase mb-4">Kontakt os:</h5>
+
+                    <ul class="list-unstyled">
+                        <!-- email -->
+                        <li>
+                            <p>
+                                <i class="fas fa-envelope mr-3"></i> BillieJean.Nyk@gmail.com
+                            </p>
+                        </li>
+                        <!-- telefon -->
+                        <li>
+                            <p>
+                                <i class="fas fa-phone mr-3"></i> +45 22 33 04 26
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-lg-3 mx-auto my-md-2 my-0 mt-2 mb-1">
+
+                    <!-- Åbningstider -->
+                    <h5 class="font-weight-bold text-uppercase mb-4">Åbningstider</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>
+                                Mandag: LUKKET
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Tirsdag: 11.30 - 17.30
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Onsdag: 11.30 - 17.30
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Torsdag: 11.30 - 17.30
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Fredag: 11.30 - 22.00
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Lørdag: 11.30 - 22.00
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Søndag: LUKKET
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <!--Google maps-->
+                <div id="map-container"
+                     class="z-depth-1-half map-container col-md-4 col-lg-3 mx-auto my-md-2 my-0 mt-2 mb-2 embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item"
+                            src="https://maps.google.com/maps?q=billie%20jean%20bar&t=k&z=17&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" allowfullscreen></iframe>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,78 @@
+@import "css/_colors";
+
+body{
+  background-color: $BackgroundColor!important;
+}
+
+.kontakt-sektion{
+  h1{
+    color: #EC6907 !important;
+    font-family: CoconPro;
+    font-size: 16px;
+  }
+  h2{
+    color: $TextBoksColor !important;
+    font-family: Montserrat;
+    font-size: 16px;
+  }
+
+
+  .kontakt-boks{
+    background-color: $FooterColor;
+    height: auto;
+    width: auto;
+  }
+  ul{
+    font-size: 16px;
+    font-family: Montserrat;
+  }
+  .finde-os{
+    color: $TextBoksColor;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .kontakt-sektion{
+    h1{
+      color: #EC6907 !important;
+      font-family: CoconPro;
+      font-size: 30px;
+    }
+    h2{
+      color: $TextBoksColor !important;
+      font-family: Montserrat;
+      font-size: 30px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .kontak-boks2{
+    font-size: 30px!important;
+    font-family: Montserrat;
+
+   }
+  .finde-os{
+    color: $TextBoksColor;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 60px;
+  }
+  .kontakt-sektion{
+    h1{
+      color: #EC6907 !important;
+      font-family: CoconPro;
+      font-size: 60px;
+    }
+    h2{
+      color: $TextBoksColor !important;
+      font-family: Montserrat;
+      font-size: 40px;
+    }
+}
+}
