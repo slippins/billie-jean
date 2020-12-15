@@ -1,8 +1,11 @@
 @import "css/_colors";
 
+body{
+background-color: $BackgroundColor!important;
+}
 
 .galleriSektion {
-  background-color: $skriftcolor;
+  background-color: $skriftcolor!important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +16,7 @@
 
   h2 {
     color: $ButtonColor;
-    font-size: 60px;
+    font-size: 15px;
     font-family: CoconPro;
   }
 
@@ -33,7 +36,6 @@
     border-bottom: 10px solid transparent;
     transition: opacity .6s ease;
     border-radius: 100%;
-    background: white;
   }
 }
 
@@ -63,6 +65,7 @@
       justify-content: center;
     }
   }
+
   .carousel-indicators li {
     transition: opacity .2s ease;
     background-color: inherit;
@@ -75,10 +78,11 @@
     height: 14px;
     width: 14px;
   }
+
   .carousel-indicators {
     position: absolute;
     right: 0;
-    bottom: 50px;
+    bottom: 0px;
     left: 0;
     z-index: 15;
     display: -ms-flexbox;
@@ -90,10 +94,40 @@
     margin-left: 15%;
     list-style: none;
   }
+
   .carousel-indicators .active {
     background-color: #ffffff;
     border: solid;
     color: #ffffff;
   }
 
+}
+
+
+@media screen and (min-width: 1200px) {
+  .galleriSektion {
+    background-color: $skriftcolor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto 0;
+    flex-direction: column;
+
+
+    h2 {
+      color: $ButtonColor;
+      font-size: 60px;
+      font-family: CoconPro;
+    }
+
+    .carousel-indicators {
+      bottom: 50px;
+
+    }
+  }
+}
+
+.album-billieBar{
+  background-color: $BackgroundColor;
 }
