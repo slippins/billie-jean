@@ -33,6 +33,113 @@
 <body>
 
 
+<div class="container-fluid px-0 py-0">
+    <header class="">
+        <div class="TopHeaderImgMobile">
+
+            <div class="AppearingSection">
+                <div class="headerText">
+                    <div class="divph1">
+                        <p class="px-lg-4 py-lg-2">Nykøbing F's hyggeligste bar</p>
+                    </div>
+
+                    <a href="#KONTAKT">
+                        <div class="divKontakt mb-4"><a href="#OmMig-sektion1"><i class=""></i>Book
+                            bord</a>
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <div class="MenuBar container-fluid py-0 px-0">
+        <nav class="navbar navbar-expand-md navbar-dark">
+
+            <div class="LOGO1 col-md-12 d-block d-md-none d-flex justify-content-center align-items-center">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+
+                <ul class="navbar-nav ml-auto col-md-12 d-flex justify-content-center align-items-center m-0 px-0">
+
+                    <li class="nav-item col-md-2 d-flex justify-content-center justify-content-lg-start">
+                        <a href="menu.html" class="btn-link">Menu</a>
+                    </li>
+
+                    <li class="nav-item col-md-2 d-flex justify-content-center justify-content-lg-start">
+                        <a href="events.html" class="btn-link">Events</a>
+                    </li>
+
+                    <div class="LOGO2 d-none d-md-block">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <li class="nav-item dropdown col-md-2 d-flex justify-content-center justify-content-lg-end">
+                        <a href="galleri.html" class="btn-link">Galleri</a>
+                    </li>
+
+                    <li class="nav-item col-md-2 d-flex justify-content-center justify-content-lg-end">
+                        <a href="kontakt.html" class="btn-link">Kontakt</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="GalleryForsiden d-flex flex-row">
+        <div class="d-none d-md-block">
+            <img id="myImg" src="images/G1.jpg" alt="Billie jeans bar">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+        </div>
+
+        <div>
+            <img id="myImg1" src="images/G2.jpg" alt="Billie jeans bar">
+            <div id="myModal1" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal1-content" id="img011">
+                <div id="caption1"></div>
+            </div>
+        </div>
+
+        <div>
+            <img id="myImg2" src="images/G3.jpg" alt="Billie jeans bar">
+            <div id="myModal2" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal1-content" id="img012">
+                <div id="caption2"></div>
+            </div>
+        </div>
+        <div>
+            <img id="myImg3" src="images/G4.jpg" alt="Billie jeans bar">
+            <div id="myModal3" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal1-content" id="img013">
+                <div id="caption3"></div>
+            </div>
+        </div>
+    </div>
+
+
 
 <footer class="page-footer font-small mdb-color pt-4">
 
@@ -129,5 +236,30 @@
     </div>
 </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
 </body>
 </html>
