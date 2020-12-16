@@ -8,6 +8,7 @@
 
 body {
   margin: 0; /* Ingen kanter i siden af browser */
+  background-color: $BackgroundColor !important;
  }
 
 h1, h2, h3, h4, h5, h6 {
@@ -375,6 +376,16 @@ footer{
   height:100%;
   width:100%;
   position:absolute;
+}
+
+#tid{
+  background-color: $BackgroundColor;
+  font-size: 1.5em;
+  font-family: $FontSecondary;
+}
+
+#timer{
+  background-color: #0c0c0c;
 }
 
 @media screen and (min-width: 768px) {
