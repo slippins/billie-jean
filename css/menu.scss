@@ -8,8 +8,12 @@ body {
   background-color: $BackgroundColor !important;
 }
 
-h1, h2{
+h1, h2, h3{
   color: $ButtonColor;
+  font-family: $FontPrimary;
+}
+h4, p{
+  font-family: $FontSecondary;
 }
 
 .btn-outline-dark{

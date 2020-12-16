@@ -6,16 +6,16 @@ body {
 
 h2, h3{
   color: $ButtonColor;
+  font-family: $FontPrimary;
 }
 
 .event-boks{
   background-color: $EventColor;
 }
 
-
-
-
-
+p{
+  font-family: $FontSecondary;
+}
 
 @media screen and (min-width: 768px) {
 

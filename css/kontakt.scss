@@ -4,7 +4,9 @@ body{
   background-color: $BackgroundColor!important;
 }
 
-
+p{
+  font-family: $FontSecondary;
+}
 
 .kontakt-sektion{
   h1{
