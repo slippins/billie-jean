@@ -1,0 +1,67 @@
+@import "css/_colors";
+
+*{
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $BackgroundColor !important;
+}
+
+h1, h2{
+  color: $ButtonColor;
+}
+
+.btn-outline-dark{
+  background-color: $MenuKort !important;
+
+}
+
+.menuKort{
+  background-color: $MenuKort !important;
+}
+
+.item {
+  position:relative;
+  overflow:hidden;
+}
+.item h4, .item p {
+  display:block;
+  clear:both;
+}
+.item p {
+  clear:both;
+  color:#938372;
+  margin-left:5px;
+}
+
+.item span:first-of-type {
+  background-image:linear-gradient(to right,$ButtonColor 33%,rgba(0,0,0,0) 0%);
+  background-position:bottom;
+  background-size:3px 1px;
+  background-repeat:repeat-x;
+  height:1px;
+  width:100%;
+  position:absolute;
+  top:22px;
+}
+
+.item span:nth-of-type(2n) {
+  position:absolute;
+  font-size: 1.25em;
+  font-weight:400;
+  right:0;
+  top:0;
+  padding-left:8px;
+  z-index:0;
+}
+
+.item h4 {
+  display:inline-block;
+  padding-right:8px;
+  font-size:1.25rem;
+  max-width:80%;
+  text-transform:capitalize;
+  margin-bottom:4px;
+  position:relative;
+}
